@@ -1,0 +1,7 @@
+#
+# PageTS for ugarte
+#
+<INCLUDE_TYPOSCRIPT: source="FILE:EXT:ugarte/Configuration/PageTS/RTE.txt">
+<INCLUDE_TYPOSCRIPT: source="FILE:EXT:ugarte/Configuration/PageTS/TCEFORM.txt">
+<INCLUDE_TYPOSCRIPT: source="FILE:EXT:ugarte/Configuration/PageTS/TCEMAIN.txt">
+<INCLUDE_TYPOSCRIPT: source="FILE:EXT:ugarte/Configuration/PageTS/Mod/WebLayout/BackendLayouts.txt">
