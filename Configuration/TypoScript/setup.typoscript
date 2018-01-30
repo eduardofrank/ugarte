@@ -13,7 +13,7 @@ page {
     }
 
     includeCSS {
-        theme = EXT:ugarte/Resources/Public/Css/theme.min.css
+        theme = EXT:ugarte/Resources/Public/Less/theme.less
     }
 
     includeJSLibs {
@@ -30,5 +30,36 @@ page {
 
     includeJSFooter {
         ugarte_scripts = EXT:ugarte/Resources/Public/JavaScript/Dist/scripts.js
+        smallmenu = EXT:ugarte/Resources/Public/JavaScript/Dist/smallmenu.js
     }
+}
+
+#############################################
+## From here onward added by Eduardo Frank ##
+#############################################
+# Error reports in plain text instead of oops
+config.contentObjectExceptionHandler = 0
+
+#### FONTS INCLUDES ###
+page.headerData.230 = TEXT
+page.headerData.230.value = <link href="https://fonts.googleapis.com/css?family=Josefin+Sans:100,100i,300,300i,400,400i,600,600i,700,700i" rel="stylesheet">
+page.headerData.240 = TEXT
+page.headerData.240.value = <link href="https://fonts.googleapis.com/css?family=Montserrat:100,100i,200,200i,300,300i,400,400i,500,500i,600,600i,700,700i,800,800i,900,900i" rel="stylesheet">
+
+#### CSS INCLUDES ###
+page.includeCSS.file1 = EXT:ugarte/Resources/Public/Css/ugarte.css
+
+#### SMALL LOGO IN HEADER ###
+lib.sm-logo = TEXT
+lib.sm-logo.value = EXT:ugarte/Resources/Public/Images/logo.svg
+
+#### LOCALIZATION & TRANSLATION ###
+config {
+        linkVars = L
+        sys_language_uid = 0
+        sys_language_overlay = 1
+        sys_language_mode = content_fallback
+        language = en
+        locale_all = en_US.UTF-8
+        htmlTag_setParams = lang="en" dir="ltr" class="no-js"
 }
