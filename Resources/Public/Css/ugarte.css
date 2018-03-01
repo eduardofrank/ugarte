@@ -1,4 +1,4 @@
-p, h1, h1 a, h2, h2 a, h3, h3 a, h4, h4 a, h5, h5 a, li, li a {
+extrap, h1, h1 a, h2, h2 a, h3, h3 a, h4, h4 a, h5, h5 a, li, li a, .caption {
   font-family: 'Montserrat', sans-serif;
 }
 
@@ -310,6 +310,17 @@ ul.nav {
 /**  END OF SMALLMENU   **/
 
 /**********************/
+/**    BREADCRUMB    **/
+/**********************/
+
+
+.breadcrumb {
+    float:right;
+}
+
+/** END OF BREADCRUMB **/
+
+/**********************/
 /**    ABOUT PAGE    **/
 /**********************/
 
@@ -426,6 +437,10 @@ a.more {
 }
 }
 
+#p7 .body-bg{
+  background-color:#f4fbfe;
+}
+
 /***** Hack para evitar problema de flex en safari *****/
 div.gallery-row > :first-child {
   margin-left:-2px;
@@ -435,10 +450,21 @@ div.gallery-row > :first-child {
   font-size: 1.5em;
 }
 
-#p9 .caption,
-#p10 .caption {
+.caption
+{
     display:none;
 }
+
+#p4 .caption {
+    display:block;
+    font-weight:300;
+    font-size: 2.3em;
+    line-height: 1em;
+    color: #000;
+    padding-top: 0.1em;
+}
+
+
 /**    END OF NEWS    **/
 
 /*************************/
